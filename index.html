@@ -11,18 +11,18 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: #f8f8f8;
-            color: #333;
+            background-color: #282c35;
+            color: #eee;
         }
 
         header {
-            background-color: #292b2c;
-            color: #fff;
+            background-color: #1a1d23;
+            color: #eee;
             padding: 1em;
             position: fixed;
             width: 100%;
             z-index: 1000;
-            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
         }
 
         header nav ul {
@@ -34,7 +34,7 @@
         }
 
         header nav ul li a {
-            color: #fff;
+            color: #eee;
             text-decoration: none;
             font-weight: bold;
             font-size: 1.2em;
@@ -48,8 +48,8 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #353a45;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
             border-radius: 10px;
             padding-top: 60px;
             line-height: 1.6;
@@ -62,11 +62,11 @@
             margin: 20px 0;
             float: left;
             margin-right: 20px;
-            border: 5px solid #292b2c;
+            border: 5px solid #1a1d23;
         }
 
         h1, h2, h3 {
-            color: #292b2c;
+            color: #eee;
         }
 
         p {
@@ -76,20 +76,29 @@
         footer {
             text-align: center;
             padding: 1em;
-            background-color: #292b2c;
-            color: #fff;
+            background-color: #1a1d23;
+            color: #eee;
             position: absolute;
             bottom: 0;
             width: 100%;
         }
 
         a {
-            color: #292b2c;
+            color: #eee;
             text-decoration: none;
         }
 
         a:hover {
             color: #fed136;
+        }
+
+        /* Dark mode toggle button */
+        .dark-mode-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -145,10 +154,10 @@
         <h2>Education</h2>
 
         <h3>Computer Science Degree</h3>
-        <p>KL University, Graduated in 2026</p>
+        <p>University of Excellence, Graduated in 20XX</p>
 
         <h3>Web Development Certification</h3>
-        <p>sparta coding club, Completed in 2024</p>
+        <p>Code Institute, Completed in 20XX</p>
     </section>
 
     <section id="skills">
@@ -173,9 +182,20 @@
         <p>GitHub: <a href="https://github.com/gudivadalovekik">github.com/gudivadalovekik</a></p>
     </section>
 
+    <!-- Dark mode toggle button -->
+    <div class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</div>
+
     <footer>
         &copy; 2023 Gudivada Lovekik
     </footer>
+
+    <script>
+        // Dark mode toggle functionality
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+    </script>
 </body>
 
 </html>
