@@ -7,21 +7,22 @@
     <title>Gudivada Lovekik - Web Developer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: #f4f4f4;
+            background-color: #f8f8f8;
             color: #333;
         }
 
         header {
-            background-color: #1a1a1a;
+            background-color: #292b2c;
             color: #fff;
             padding: 1em;
             position: fixed;
             width: 100%;
             z-index: 1000;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
         }
 
         header nav ul {
@@ -35,10 +36,12 @@
         header nav ul li a {
             color: #fff;
             text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
         }
 
         header nav ul li a:hover {
-            color: #ccc;
+            color: #fed136;
         }
 
         section {
@@ -46,33 +49,47 @@
             margin: 20px auto;
             padding: 20px;
             background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
             padding-top: 60px;
+            line-height: 1.6;
         }
 
         .profile-image {
-            max-width: 100px;
+            max-width: 150px;
             height: auto;
             border-radius: 50%;
             margin: 20px 0;
             float: left;
             margin-right: 20px;
+            border: 5px solid #292b2c;
         }
 
-        h1,
-       {
-            color: white;
+        h1, h2, h3 {
+            color: #292b2c;
         }
 
         p {
-            line-height: 1.6;
+            margin-bottom: 15px;
         }
 
         footer {
             text-align: center;
             padding: 1em;
-            background-color: #1a1a1a;
+            background-color: #292b2c;
             color: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        a {
+            color: #292b2c;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #fed136;
         }
     </style>
 </head>
@@ -84,6 +101,8 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -94,43 +113,69 @@
 
         <h2>About Me</h2>
         <p>
-            Hello! I'm Gudivada Lovekik, a passionate and detail-oriented web developer based in front end. With a strong foundation in front-end and back-end technologies, I love bringing creative ideas to life in the digital world.
+            Welcome to my corner of the web! I'm Gudivada Lovekik, a passionate and detail-oriented web developer specializing in front-end technologies. I find joy in turning creative ideas into digital experiences that captivate and engage users.
         </p>
         <p>
-            My journey into the world of coding began [mention how you got started, e.g., during college, self-taught, etc.]. Since then, I've had the opportunity to work on various projects, honing my skills in HTML, CSS, JavaScript, and other modern web technologies.
+            My coding journey began during my college years, where I discovered the fascinating world of web development. Since then, I've immersed myself in various projects, refining my skills in HTML, CSS, JavaScript, and more.
         </p>
         <p>
-            I am dedicated to delivering user-friendly and visually appealing websites. Whether it's crafting responsive layouts, optimizing website performance, or solving complex coding challenges, I enjoy every aspect of web development.
+            Committed to delivering user-friendly and visually stunning websites, I thrive on crafting responsive layouts, optimizing performance, and overcoming complex coding challenges. Let's build something incredible together!
         </p>
     </section>
 
-   
-<section id="projects">
-    <h2>Projects</h2>
+    <section id="projects">
+        <h2>Projects</h2>
 
-    <div>
-        <h3>Automatic window closing using arudino</h3>
-        <p>"RainGuard" is an innovative project designed to automate window closure during rain using Arduino technology. The system employs a rain sensor, an Arduino board, a motor, and a relay module to create a smart window control mechanism. The primary goal is to enhance convenience and protection of living spaces by autonomously responding to rainfall.</p>
-    </div>
+        <div>
+            <h3>Automatic Window Closing using Arduino</h3>
+            <p>
+                "RainGuard" is an innovative project designed to automate window closure during rain using Arduino technology. The system employs a rain sensor, an Arduino board, a motor, and a relay module to create a smart window control mechanism. The primary goal is to enhance convenience and protection of living spaces by autonomously responding to rainfall.
+            </p>
+        </div>
 
-    <div>
-        <h3>Home Automation using 8051</h3>
-        <p>"SmartHome 8051" is an intelligent home automation system designed to enhance comfort, security, and energy efficiency. The project employs the 8051 microcontroller, interfaced with various sensors and actuators, to control and monitor household devices.</p>
-    </div>
-</section>
+        <div>
+            <h3>Home Automation using 8051</h3>
+            <p>
+                "SmartHome 8051" is an intelligent home automation system designed to enhance comfort, security, and energy efficiency. The project employs the 8051 microcontroller, interfaced with various sensors and actuators, to control and monitor household devices.
+            </p>
+        </div>
+    </section>
 
-<!-- Contact Section -->
-<section id="contact">
-    <h2>Contact</h2>
+    <section id="education">
+        <h2>Education</h2>
 
-    <p>Email: gudivadalovekik@gmail.com</p>
-    <p>LinkedIn: linkedin.com/in/gudivadalovekik</p>
-    <p>GitHub: github.com/gudivadalovekik</p>
-</section>
+        <h3>Computer Science Degree</h3>
+        <p>KL University, Graduated in 2026</p>
 
-<footer>
-    &copy; 2023 Gudivada Lovekik
-</footer>
+        <h3>Web Development Certification</h3>
+        <p>sparta coding club, Completed in 2024</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <h3>Programming Languages</h3>
+        <p>HTML, CSS, JavaScript, Python</p>
+
+        <h3>Frameworks</h3>
+        <p>React, Vue.js</p>
+
+        <h3>Tools</h3>
+        <p>Git, VS Code, Photoshop</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <p>Email: <a href="mailto:gudivadalovekik@gmail.com">gudivadalovekik@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/gudivadalovekik">linkedin.com/in/gudivadalovekik</a></p>
+        <p>GitHub: <a href="https://github.com/gudivadalovekik">github.com/gudivadalovekik</a></p>
+    </section>
+
+    <footer>
+        &copy; 2023 Gudivada Lovekik
+    </footer>
 </body>
 
 </html>
